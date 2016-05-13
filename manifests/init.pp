@@ -32,6 +32,7 @@ class cassandra (
   $package_name                          = 'dsc22',
   $partitioner
     = 'org.apache.cassandra.dht.Murmur3Partitioner',
+  $row_cache_size_in_mb                  = 100,
   $rpc_address                           = 'localhost',
   $rpc_port                              = 9160,
   $rpc_server_type                       = 'sync',
