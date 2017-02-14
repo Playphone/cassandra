@@ -49,7 +49,7 @@ hinted_handoff_throttle_in_kb: 1024
 # Consider increasing this number when you have multi-dc deployments, since
 # cross-dc handoff tends to be slower
 max_hints_delivery_threads: 2
-<% if @hints_directory != undef -%>
+<% if @hints_directory -%>
 hints_directory: <%= @hints_directory %>
 <% end -%>
 
