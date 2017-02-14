@@ -22,6 +22,7 @@ class cassandra (
   $disk_failure_policy                   = 'stop',
   $endpoint_snitch                       = 'SimpleSnitch',
   $hinted_handoff_enabled                = true,
+  $hints_directory                       = undef,
   $incremental_backups                   = false,
   $internode_compression                 = 'all',
   $listen_address                        = 'localhost',
