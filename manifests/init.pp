@@ -14,6 +14,7 @@ class cassandra (
   $client_encryption_keystore_password   = 'cassandra',
   $cluster_name                          = 'Test Cluster',
   $commitlog_directory                   = '/var/lib/cassandra/commitlog',
+  $commitlog_total_space_in_mb           = undef,
   $concurrent_counter_writes             = 32,
   $concurrent_reads                      = 32,
   $concurrent_writes                     = 32,

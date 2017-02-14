@@ -320,6 +320,9 @@ memtable_allocation_type: heap_buffers
 # segment and remove it.  So a small total commitlog space will tend
 # to cause more flush activity on less-active columnfamilies.
 # commitlog_total_space_in_mb: 8192
+<% if @commitlog_total_space_in_mb -%>
+commitlog_total_space_in_mb: <%= @commitlog_total_space_in_mb %>
+<% end -%>
 
 # This sets the amount of memtable flush writer threads.  These will
 # be blocked by disk io, and each one will hold a memtable in memory
